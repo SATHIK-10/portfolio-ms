@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/S1.jpg">
+    <title>SATHIK | portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/skins/color-1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- live style switcher -->
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="css/style-switcher.css">
+    <script type="text/javascript">
+  (function() {
+    emailjs.init('zgggr9vLNSGVMI3Y1'); // your EmailJS user ID
+  })();
+
+  window.onload = function() {
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      emailjs.sendForm('service_5bev13p', 'template_3zmu2n9', this)
+        .then(function() {
+          document.getElementById("push").innerHTML = `<i class="fa-sharp fa-solid fa-envelope-circle-check"></i> MESSAGE SENT SUCCESSFULLY!`;
+        }, function(error) {
+          console.log('FAILED...', error);
+          document.getElementById("pusherror").innerHTML = `<i class="fa-solid fa-envelope-open"></i> Sorry, this contact form email limit is over. Please contact me through direct mail.`;
+        });
+    });
+  };
+
+  function resetit(){
+    document.getElementById("push").innerText = "";
+    document.getElementById("pusherror").innerText = "";
+  }
+</script>
+
+</head>
+
+<body>
+    <!-- main container start -->
+    <div class="main-container">
+        <!-- sidebar start -->
+        <div class="aside" id="asidebar">
+            <div class="logo">
+                <a href="#"><span>S</span>ATHIK</a>
+            </div>
+            <div class="nav-toggler" id="navsidetoggler">
+                <span></span>
+            </div>
+            <ul class="nav">
+                <li><a href="#home" id="homenav" class="active"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#about" id="aboutnav"><i class="fa fa-user"></i> About</a></li>
+                <li><a href="#services" id="servicesnav"><i class="fa fa-list"></i> Services</a></li>
+                <li><a href="#portfolio" id="portfolionav"><i class="fa fa-briefcase"></i> Portfolio</a></li>
+                <li><a href="#contact" id="contactnav"><i class="fa fa-comments"></i> Contact</a></li>
+            </ul>
+        </div>
+        <!-- sidebar end -->
+        <!-- main content start -->
+        <!-- home section start -->
+        <div class="main-content">
+            <section class="home section" id="home">
+                <div class="container">
+                    <div class="row">
+                        <div class="home-info padd-15">
+                            <h3 class="hello">Hello, my name is <span class="name">Mohamed Sathik</span></h3>
+                            <h3 class="my-profession">I' m a <span class="typing">Student</span></h3>
+                            <p>✨ B.Tech IT student at B.S. Abdur Rahman Crescent Institute of Science and Technology.
+Skilled in HTML, CSS, JavaScript, MERN stack, and Python.</p>
+                            <a href="#contact" class="btn hire-me">Hire Me</a>
+                            <!-- <a href="#contact" class="btn hire-me"><span>Hire me</span></a> -->
+                        </div>
+                        <div class="home-img padd-15">
+                            <img src="https://st.depositphotos.com/1865899/1698/v/600/depositphotos_16981019-stock-illustration-web-design-template-vector-eps10.jpg" alt="WELCOME">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- home section end -->
+<!-- About section start -->
+<section class="about section" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="section-title padd-15">
+                <h2>About Me</h2>
+            </div>
+        </div>
+        <div class="row reveal">
+            <div class="about-content padd-15">
+                <div class="row">
+                    <div class="about-text padd-15">
+                       <h3>I'm Mohamed Sathik and <span>MERN Developer & Data Analytics Enthusiast</span></h3>
+<p>
+  I'm a B.Tech Information Technology student at 
+  B.S. Abdur Rahman Crescent Institute of Science and Technology. 
+  Skilled in the MERN stack for full-stack web development and passionate 
+  about Data Analytics, I enjoy building innovative solutions and 
+  deriving insights from data.
+</p>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="personal-info padd-15">
+                        <div class="row">
+                            <div class="info-item padd-15"><p>Birthday : <span>10 Aug 2004</span></p></div>
+                            <div class="info-item padd-15"><p>Age : <span>21</span></p></div>
+                            <div class="info-item padd-15"><p>Number : <span>+91 8778804457</span></p></div>
+                            <div class="info-item padd-15"><p>Email : <span>mdsathik@gmail.com</span></p></div>
+                            <div class="info-item padd-15"><p>Degree : <span>pursuing IT</span></p></div>
+                            <div class="info-item padd-15"><p>City : <span>Chennai</span></p></div>
+                        </div>
+                        <div class="row">
+                            <div class="buttons padd-15">
+                                <a href="Resume.pdf" download class="btn">Download CV</a>
+                                <a href="#contact" class="btn hire-me"><span>Hire me</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tech Stack Section (New Row) -->
+ <div class="skills padd-15" style="margin-top: 30px; max-width: 960px; margin-left: auto; margin-right: auto; padding: 0 20px;">
+  <h3 style="color: white; margin-bottom: 35px; font-weight: 700; text-align: center;">Web Development</h3>
+  
+  <div class="skill-grid web-dev-grid" style="
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+  ">
+    <div class="skill-item" style="
+      flex: 0 0 23%;
+      box-sizing: border-box;
+      background: #121212;
+      padding: 40px 15px;
+      border-radius: 8px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.3);
+      min-width: 150px;
+      transition: transform 0.3s ease;
+    ">
+      <img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png" alt="HTML5" style="max-width: 80px; margin-bottom: 25px; display: inline-block;" />
+      <h5 style="margin: 0; font-weight: 600; font-size: 1.2rem;">HTML5</h5>
+    </div>
+    <div class="skill-item" style="
+      flex: 0 0 23%;
+      box-sizing: border-box;
+      background: #121212;
+      padding: 40px 15px;
+      border-radius: 8px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.3);
+      min-width: 150px;
+      transition: transform 0.3s ease;
+    ">
+      <img src="images/portfolio/css-removebg-preview.png" alt="CSS3" style="max-width: 80px; margin-bottom: 25px; display: inline-block;" />
+      <h5 style="margin: 0; font-weight: 600; font-size: 1.2rem;">CSS3</h5>
+    </div>
+    <div class="skill-item" style="
+      flex: 0 0 23%;
+      box-sizing: border-box;
+      background: #121212;
+      padding: 40px 15px;
+      border-radius: 8px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.3);
+      min-width: 150px;
+      transition: transform 0.3s ease;
+    ">
+      <img src="images/portfolio/js-removebg-preview.png" alt="JavaScript" style="max-width: 80px; margin-bottom: 25px; display: inline-block;" />
+      <h5 style="margin: 0; font-weight: 600; font-size: 1.2rem;">JavaScript</h5>
+    </div>
+    <div class="skill-item" style="
+      flex: 0 0 23%;
+      box-sizing: border-box;
+      background: #121212;
+      padding: 40px 15px;
+      border-radius: 8px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.3);
+      min-width: 150px;
+      transition: transform 0.3s ease;
+    ">
+      <img src="images/portfolio/react-removebg-preview.png" alt="React.js" style="max-width: 80px; margin-bottom: 25px; display: inline-block;" />
+      <h5 style="margin: 0; font-weight: 600; font-size: 1.2rem;">React.js</h5>
+    </div>
+    <div class="skill-item" style="
+      flex: 0 0 23%;
+      box-sizing: border-box;
+      background: #121212;
+      padding: 40px 15px;
+      border-radius: 8px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.3);
+      min-width: 150px;
+      transition: transform 0.3s ease;
+    ">
+      <img src="images/portfolio/node-removebg-preview.png" alt="Node.js" style="max-width: 80px; margin-bottom: 25px; display: inline-block;" />
+      <h5 style="margin: 0; font-weight: 600; font-size: 1.2rem;">Node.js</h5>
+    </div>
+    <div class="skill-item" style="
+      flex: 0 0 23%;
+      box-sizing: border-box;
+      background: #121212;
+      padding: 40px 15px;
+      border-radius: 8px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.3);
+      min-width: 150px;
+      transition: transform 0.3s ease;
+    ">
+      <img src="images/portfolio/express-removebg-preview.png" alt="Express.js" style="max-width: 80px; margin-bottom: 25px; display: inline-block;" />
+      <h5 style="margin: 0; font-weight: 600; font-size: 1.2rem;">Express.js</h5>
+    </div>
+    <div class="skill-item" style="
+      flex: 0 0 23%;
+      box-sizing: border-box;
+      background: #121212;
+      padding: 40px 15px;
+      border-radius: 8px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.3);
+      min-width: 150px;
+      transition: transform 0.3s ease;
+    ">
+      <img src="images/portfolio/boot-removebg-preview.png" alt="Bootstrap" style="max-width: 80px; margin-bottom: 25px; display: inline-block;" />
+      <h5 style="margin: 0; font-weight: 600; font-size: 1.2rem;">Bootstrap</h5>
+    </div>
+    <div class="skill-item" style="
+      flex: 0 0 23%;
+      box-sizing: border-box;
+      background: #121212;
+      padding: 40px 15px;
+      border-radius: 8px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.3);
+      min-width: 150px;
+      transition: transform 0.3s ease;
+    ">
+      <img src="images/portfolio/postman2-removebg-preview.png" alt="PostMan" style="max-width: 80px; margin-bottom: 25px; display: inline-block;" />
+      <h5 style="margin: 0; font-weight: 600; font-size: 1.2rem;">PostMan</h5>
+    </div>
+  </div>
+</div>
+<!-- Databases + Languages in single row -->
+<div class="skill-row" style="margin-top: 40px; display: flex; gap: 40px; flex-wrap: wrap; max-width: 960px; margin: 0 auto;">
+
+  <!-- Databases column: 55% width -->
+  <div class="skill-column databases" style="flex: 0 0 55%; min-width: 280px;">
+    <h3 style="color: white; margin-bottom: 15px; font-weight: 700;">Databases</h3>
+    <div class="skill-grid two-items" style="
+      display: flex; 
+      gap: 20px;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      width: 100%;
+    ">
+      <div class="skill-item" style="
+        flex: 1 1 0;
+        background: #121212;
+        padding: 30px 10px;
+        border-radius: 8px;
+        text-align: center;
+        color: white;
+        box-shadow: 0 0 10px 2px rgba(255,255,255,0.3);
+        min-width: 120px;
+      ">
+        <img src="images/portfolio/mongo-removebg-preview.png" alt="MongoDB" style="max-width: 80px; margin-bottom: 20px; display: inline-block;" />
+        <h5 style="margin: 0; font-weight: 600; font-size: 1.1rem;">MongoDB</h5>
+      </div>
+      <div class="skill-item" style="
+        flex: 1 1 0;
+        background: #121212;
+        padding: 30px 10px;
+        border-radius: 8px;
+        text-align: center;
+        color: white;
+        box-shadow: 0 0 10px 2px rgba(255,255,255,0.3);
+        min-width: 120px;
+      ">
+        <img src="images/portfolio/post-removebg-preview.png" alt="PostgreSQL" style="max-width: 80px; margin-bottom: 20px; display: inline-block;" />
+        <h5 style="margin: 0; font-weight: 600; font-size: 1.1rem;">PostgreSQL</h5>
+      </div>
+    </div>
+  </div>
+
+  <!-- Languages column: 30% width -->
+  <div class="skill-column languages" style="flex: 0 0 30%; min-width: 150px;">
+    <h3 style="color: white; margin-bottom: 15px; font-weight: 700;">Languages</h3>
+    <div class="skill-grid one-item" style="
+      display: flex; 
+      justify-content: center;
+      width: 100%;
+    ">
+      <div class="skill-item" style="
+        flex: 1 1 0;
+        background: #121212;
+        padding: 30px 20px;
+        border-radius: 8px;
+        text-align: center;
+        color: white;
+        box-shadow: 0 0 10px 2px rgba(255,255,255,0.3);
+        min-width: 180px;
+      ">
+        <img src="images/portfolio/python-removebg-preview.png" alt="Python" style="max-width: 80px; margin-bottom: 20px; display: inline-block;" />
+        <h5 style="margin: 0; font-weight: 600; font-size: 1.1rem;">Python</h5>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<!-- Design Tools + Data Analysis & Visualization row -->
+<div class="skill-row" style="margin-top: 40px; display: flex; gap: 40px; flex-wrap: wrap; max-width: 960px; margin: 0 auto;">
+
+  <!-- Design Tools column: 30% width -->
+  <div class="skill-column design-tools" style="flex: 0 0 30%; min-width: 250px;">
+    <h3 style="color: white; margin-bottom: 15px; font-weight: 700;">Design Tools</h3>
+    <div class="skill-grid one-item" style="
+      display: flex; 
+      justify-content: center;
+      width: 100%;
+    ">
+      <div class="skill-item" style="
+        flex: 1 1 0;
+        background: #121212;
+        padding: 40px 20px; /* increased vertical padding: 30 + 10 top + 10 bottom */
+        border-radius: 8px;
+        text-align: center;
+        color: white;
+        box-shadow: 0 0 10px 2px rgba(255,255,255,0.3);
+        min-width: 150px;
+      ">
+        <img src="images/portfolio/figma-removebg-preview.png" alt="Figma" style="max-width: 80px; margin-bottom: 20px; display: inline-block;" />
+        <h5 style="margin: 0; font-weight: 600; font-size: 1.1rem;">Figma</h5>
+      </div>
+    </div>
+  </div>
+
+  <!-- Data Analysis & Visualization column: 55% width -->
+  <div class="skill-column data-viz" style="flex: 0 0 55%; min-width: 400px;">
+    <h3 style="color: white; margin-bottom: 15px; font-weight: 700;">Data Analysis & Visualization</h3>
+    <div class="skill-grid two-items" style="
+      display: flex; 
+      gap: 20px;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      width: 100%;
+    ">
+      <div class="skill-item" style="
+        flex: 1 1 0;
+        background: #121212;
+        padding: 40px 10px; /* increased vertical padding */
+        border-radius: 8px;
+        text-align: center;
+        color: white;
+        box-shadow: 0 0 10px 2px rgba(255,255,255,0.3);
+        min-width: 120px;
+      ">
+        <img src="images/portfolio/power-removebg-preview.png" alt="Power BI" style="max-width: 80px; margin-bottom: 20px; display: inline-block;" />
+        <h5 style="margin: 0; font-weight: 600; font-size: 1.1rem;">Power BI</h5>
+      </div>
+      <div class="skill-item" style="
+        flex: 1 1 0;
+        background: #121212;
+        padding: 40px 10px; /* increased vertical padding */
+        border-radius: 8px;
+        text-align: center;
+        color: white;
+        box-shadow: 0 0 10px 2px rgba(255,255,255,0.3);
+        min-width: 120px;
+      ">
+        <img src="images/portfolio/tableau-removebg-preview.png" alt="Tableau" style="max-width: 80px; margin-bottom: 20px; display: inline-block;" />
+        <h5 style="margin: 0; font-weight: 600; font-size: 1.1rem;">Tableau</h5>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Education & Experience -->
+                <div class="row reveal">
+           <div class="education padd-15">
+  <h3 class="title">Education</h3>
+  <div class="row">
+    <div class="timeline-box padd-15">
+      <div class="timeline shadow-dark">
+        <!-- Secondary School -->
+        <div class="timeline-item">
+          <div class="circle-dot"></div>
+          <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2007 - 2020</h3>
+          <h4 class="timeline-title">Secondary School (10th)</h4>
+          <p class="timeline-text">
+            Mohamed Sathak Matriculation Higher Secondary School<br>
+            Percentage: 76.6%
+          </p>
+        </div>
+
+        <!-- Higher Secondary -->
+        <div class="timeline-item">
+          <div class="circle-dot"></div>
+          <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2020 - 2022</h3>
+          <h4 class="timeline-title">Higher Secondary (12th)</h4>
+          <p class="timeline-text">
+            Mohamed Sathak Matriculation Higher Secondary School<br>
+            Percentage: 82%
+          </p>
+        </div>
+
+        <!-- B.Tech -->
+        <div class="timeline-item">
+          <div class="circle-dot"></div>
+          <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2022 - 2026</h3>
+          <h4 class="timeline-title">B.Tech Information Technology</h4>
+          <p class="timeline-text">
+            B.S. Abdur Rahman Crescent Institute of Science and Technology<br>
+            Expected Graduation: 2026
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="experience padd-15">
+  <h3 class="title">Experience</h3>
+  <div class="row">
+    <div class="timeline-box padd-15">
+      <div class="timeline shadow-dark">
+        <!-- Intern 1 -->
+        <div class="timeline-item">
+          <div class="circle-dot"></div>
+          <h3 class="timeline-date"><i class="fa fa-calendar"></i> June 2024 – July 2024</h3>
+          <h4 class="timeline-title">Intern - CodeBind Technologies</h4>
+          <p class="timeline-text">
+            Designed and implemented landing pages for multiple projects.<br>
+            Focused on optimizing layout, responsiveness, and cross-device compatibility.<br>
+            <strong>Tech Stack:</strong> HTML, CSS, JavaScript, PHP, MySQL
+          </p>
+       <center>  <button onclick="window.open('srcn.pdf', '_blank')" class="btn-certification">View Certification</button></center> 
+        </div>
+
+        <!-- Intern 2 -->
+        <div class="timeline-item">
+          <div class="circle-dot"></div>
+          <h3 class="timeline-date"><i class="fa fa-calendar"></i> June 2025 – July 2025</h3>
+          <h4 class="timeline-title">Intern - WEBEEZLOGIC INFO
+TECH </h4>
+          <p class="timeline-text">
+            Developed and deployed full-stack web applications with a focus on performance and responsiveness.<br>
+            Enhanced the UI using Bootstrap for responsive design.<br>
+            <strong>Tech Stack:</strong> React, Node.js, Express, PostgreSQL, Bootstrap
+          </p>
+        <center> <button onclick="window.open('internship.pdf', '_blank')" class="btn-certification">View Certification</button></center>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+                </div><!-- End Education & Experience -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About section end -->
+<!-- services section start -->
+            <section class="service section" id="services">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Services</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- service item start -->
+                        <div class="service_item padd-15">
+                            <div class="service_item_inner">
+                                <div class="icon">
+                                    <i class="fa fa-mobile-alt"></i>
+                                </div>
+                                <h4 class="bar">Mobile Website Design</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto adipisci illo
+                                    nobis.</p>
+                                <div class="viewmodal">
+                                    <div class="modalopen">view more <i class="fa-solid fa-arrow-right"></i></div>
+                                </div>
+                            </div>
+                            <div class="services__modal">
+                                <div class="services__modal_content">
+                                    <i class="fa-solid fa-xmark services__modal_close"></i>
+
+                                    <h3 class="services__modal_title">Mobile wesite design</h3>
+                                    <p class="services__modal_description">services with more than 0 years of
+                                        experience. Providing quality work to clients and companies.</p>
+
+                                    <ul class="services__modal_services">
+                                        <li class="services__modal_service">
+                                            <i class="fa-regular fa-circle-check services__modal_icon"></i>
+                                            <p class="services__modal_info">I develop the user interface.</p>
+                                        </li>
+                                        <li class="services__modal_service">
+                                            <i class="fa-regular fa-circle-check services__modal_icon"></i>
+                                            <p class="services__modal_info">web page development.</p>
+                                        </li>
+                                        <li class="services__modal_service">
+                                            <i class="fa-regular fa-circle-check services__modal_icon"></i>
+                                            <p class="services__modal_info">i create ux elements interaction.</p>
+                                        </li>
+                                        <li class="services__modal_service">
+                                            <i class="fa-regular fa-circle-check services__modal_icon"></i>
+                                            <p class="services__modal_info">I position your company brand.</p>
+                                        </li>
+                                        <li class="services__modal_service">
+                                            <i class="fa-regular fa-circle-check services__modal_icon"></i>
+                                            <p class="services__modal_info">design and mockups of products for
+                                                companies.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- service item end -->
+                        <!-- service item start -->
+                        <div class="service_item padd-15">
+                            <div class="service_item_inner">
+                                <div class="icon">
+                                    <i class="fa fa-laptop-code"></i>
+                                </div>
+                                <h4 class="bar">Website Build & Design</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto adipisci illo
+                                    nobis.</p>
+                                <div class="viewmodal">
+                                    <div class="modalopen">view more <i class="fa-solid fa-arrow-right"></i></div>
+                                </div>
+                            </div>
+                            <div class="services__modal">
+                                <div class="services__modal_content">
+                                    <i class="fa-solid fa-xmark services__modal_close"></i>
+
+                                    <h3 class="services__modal_title">Web designer</h3>
+                                    <p class="services__modal_description">services with more than 0 years of
+                                        experience. Providing quality work to clients and companies.</p>
+
+                                    <ul class="services__modal_services">
+                                        <li class="services__modal_service">
+                                            <i class="fa-regular fa-circle-check services__modal_icon"></i>
+                                            <p class="services__modal_info">I develop the user interface.</p>
+                                        </li>
+                                        <li class="services__modal_service">
+                                            <i class="fa-regular fa-circle-check services__modal_icon"></i>
+                                            <p class="services__modal_info">web page development.</p>
+                                        </li>
+                                        <li class="services__modal_service">
+                                            <i class="fa-regular fa-circle-check services__modal_icon"></i>
+                                            <p class="services__modal_info">i create ux elements interaction.</p>
+                                        </li>
+                                        <li class="services__modal_service">
+                                            <i class="fa-regular fa-circle-check services__modal_icon"></i>
+                                            <p class="services__modal_info">I position your company brand.</p>
+                                        </li>
+                                        <li class="services__modal_service">
+                                            <i class="fa-regular fa-circle-check services__modal_icon"></i>
+                                            <p class="services__modal_info">design and mockups of products for
+                                                companies.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- service item end -->
+                        <!-- service item start -->
+                        <div class="service_item padd-15">
+                            <div class="service_item_inner">
+                                <div class="icon">
+                                    <i class="fa fa-palette"></i>
+                                </div>
+                                <h4 class="bar">Portfolio Design</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto adipisci illo
+                                    nobis.</p>
+                                <div class="viewmodal">
+                                    <div class="modalopen">view more <i class="fa-solid fa-arrow-right"></i></div>
+                                </div>
+                            </div>
+                            <div class="services__modal">
+                                <div class="services__modal_content">
+                                    <i class="fa-solid fa-xmark services__modal_close"></i>
+
+                                    <h3 class="services__modal_title">Portfolio design</h3>
+                                    <p class="services__modal_description">services with more than 0 years of
+                                        experience. Providing quality work to clients and companies.</p>
+
+                                    <ul class="services__modal_services">
+                                        <li class="services__modal_service">
+                                            <i class="fa-regular fa-circle-check services__modal_icon"></i>
+                                            <p class="services__modal_info">I develop the user interface.</p>
+                                        </li>
+                                        <li class="services__modal_service">
+                                            <i class="fa-regular fa-circle-check services__modal_icon"></i>
+                                            <p class="services__modal_info">web page development.</p>
+                                        </li>
+                                        <li class="services__modal_service">
+                                            <i class="fa-regular fa-circle-check services__modal_icon"></i>
+                                            <p class="services__modal_info">i create ux elements interaction.</p>
+                                        </li>
+                                        <li class="services__modal_service">
+                                            <i class="fa-regular fa-circle-check services__modal_icon"></i>
+                                            <p class="services__modal_info">I position your company brand.</p>
+                                        </li>
+                                        <li class="services__modal_service">
+                                            <i class="fa-regular fa-circle-check services__modal_icon"></i>
+                                            <p class="services__modal_info">design and mockups of products for
+                                                companies.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- service item end -->
+                        <!-- service item start -->
+                        <div class="service_item padd-15">
+                            <div class="service_item_inner">
+                                <div class="icon">
+                                    <i class="fa fa-code"></i>
+                                </div>
+                                <h4 class="bar">Learn HTML,CSS and Javascript</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto adipisci illo
+                                    nobis.</p>
+                                <div class="viewmodal">
+                                    <div class="modalopen">view more <i class="fa-solid fa-arrow-right"></i></div>
+                                </div>
+                            </div>
+                            <div class="services__modal">
+                                <div class="services__modal_content">
+                                    <i class="fa-solid fa-xmark services__modal_close"></i>
+
+                                    <h3 class="services__modal_title">Learn HTML,CSS and Javascript</h3>
+                                    <p class="services__modal_description">services with more than 0 years of
+                                        experience. Providing quality work to clients and companies.</p>
+
+                                    <ul class="services__modal_services">
+                                        <li class="services__modal_service">
+                                            <i class="fa-regular fa-circle-check services__modal_icon"></i>
+                                            <p class="services__modal_info">I develop the user interface.</p>
+                                        </li>
+                                        <li class="services__modal_service">
+                                            <i class="fa-regular fa-circle-check services__modal_icon"></i>
+                                            <p class="services__modal_info">web page development.</p>
+                                        </li>
+                                        <li class="services__modal_service">
+                                            <i class="fa-regular fa-circle-check services__modal_icon"></i>
+                                            <p class="services__modal_info">i create ux elements interaction.</p>
+                                        </li>
+                                        <li class="services__modal_service">
+                                            <i class="fa-regular fa-circle-check services__modal_icon"></i>
+                                            <p class="services__modal_info">I position your company brand.</p>
+                                        </li>
+                                        <li class="services__modal_service">
+                                            <i class="fa-regular fa-circle-check services__modal_icon"></i>
+                                            <p class="services__modal_info">design and mockups of products for
+                                                companies.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- service item end -->
+                        <!-- service item start -->
+                        <div class="service_item padd-15">
+                            <div class="service_item_inner">
+                                <div class="icon">
+                                    <i class="fa fa-regular fa-closed-captioning"></i>
+                                </div>
+                                <h4 class="bar">Subtitle Writing</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto adipisci illo
+                                    nobis.</p>
+                                <div class="viewmodal">
+                                    <div class="modalopen">view more <i class="fa-solid fa-arrow-right"></i></div>
+                                </div>
+                            </div>
+                            <div class="services__modal">
+                                <div class="services__modal_content">
+                                    <i class="fa-solid fa-xmark services__modal_close"></i>
+
+                                    <h3 class="services__modal_title">Subtitle Writing</h3>
+                                    <p class="services__modal_description">services with more than 0 years of
+                                        experience. Providing quality work to clients and companies.</p>
+
+                                    <ul class="services__modal_services">
+                                        <li class="services__modal_service">
+                                            <i class="fa-regular fa-circle-check services__modal_icon"></i>
+                                            <p class="services__modal_info">I develop the user interface.</p>
+                                        </li>
+                                        <li class="services__modal_service">
+                                            <i class="fa-regular fa-circle-check services__modal_icon"></i>
+                                            <p class="services__modal_info">web page development.</p>
+                                        </li>
+                                        <li class="services__modal_service">
+                                            <i class="fa-regular fa-circle-check services__modal_icon"></i>
+                                            <p class="services__modal_info">i create ux elements interaction.</p>
+                                        </li>
+                                        <li class="services__modal_service">
+                                            <i class="fa-regular fa-circle-check services__modal_icon"></i>
+                                            <p class="services__modal_info">I position your company brand.</p>
+                                        </li>
+                                        <li class="services__modal_service">
+                                            <i class="fa-regular fa-circle-check services__modal_icon"></i>
+                                            <p class="services__modal_info">design and mockups of products for
+                                                companies.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- service item end -->
+                        <!-- service item start -->
+                        <div class="service_item padd-15">
+                            <div class="service_item_inner">
+                                <div class="icon">
+                                    <i class="fa fa-bullhorn"></i>
+                                </div>
+                                <h4 class="bar">Hosting</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto adipisci illo
+                                    nobis.</p>
+                                <div class="viewmodal">
+                                    <div class="modalopen">view more <i class="fa-solid fa-arrow-right"></i></div>
+                                </div>
+                            </div>
+                            <div class="services__modal">
+                                <div class="services__modal_content">
+                                    <i class="fa-solid fa-xmark services__modal_close"></i>
+
+                                    <h3 class="services__modal_title">Hosting</h3>
+                                    <p class="services__modal_description">services with more than 0 years of
+                                        experience. Providing quality work to clients and companies.</p>
+
+                                    <ul class="services__modal_services">
+                                        <li class="services__modal_service">
+                                            <i class="fa-regular fa-circle-check services__modal_icon"></i>
+                                            <p class="services__modal_info">I develop the user interface.</p>
+                                        </li>
+                                        <li class="services__modal_service">
+                                            <i class="fa-regular fa-circle-check services__modal_icon"></i>
+                                            <p class="services__modal_info">web page development.</p>
+                                        </li>
+                                        <li class="services__modal_service">
+                                            <i class="fa-regular fa-circle-check services__modal_icon"></i>
+                                            <p class="services__modal_info">i create ux elements interaction.</p>
+                                        </li>
+                                        <li class="services__modal_service">
+                                            <i class="fa-regular fa-circle-check services__modal_icon"></i>
+                                            <p class="services__modal_info">I position your company brand.</p>
+                                        </li>
+                                        <li class="services__modal_service">
+                                            <i class="fa-regular fa-circle-check services__modal_icon"></i>
+                                            <p class="services__modal_info">design and mockups of products for
+                                                companies.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- service item end -->
+                    </div>
+                </div>
+            </section>
+            <!-- services section end -->
+            <!-- portfolio section start -->
+            <section class="portfolio section" id="portfolio">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Portfolio</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="portfolio-heading padd-15">
+                            <h2>My Last Projects :</h2>
+                        </div>
+                    </div>
+                    <div class="row reveal">
+                        <!-- portfolio item start -->
+                        <div class="portfolio_item padd-15">
+                            <div class="portfolio_item_inner">
+                                <div class="portfolio_img">
+                                    <img src="images/portfolio/ai-recipe.png" alt="" class="portfolio__img_inner1">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- portfolio item end -->
+                        <!-- portfolio item start -->
+                        <div class="portfolio_item padd-15">
+                            <div class="portfolio_item_inner">
+                                <div class="portfolio_img">
+                                    <img src="images/portfolio/search-in.png" alt="" class="portfolio__img_inner2">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- portfolio item end -->
+                        <!-- portfolio item start -->
+                        <div class="portfolio_item padd-15">
+                            <div class="portfolio_item_inner">
+                                <div class="portfolio_img">
+                                    <img src="images/portfolio/royal-sandwich.png" alt=""
+                                    class="portfolio__img_inner3">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- portfolio item end -->
+                        <!-- portfolio item start -->
+                        <div class="portfolio_item padd-15">
+                            <div class="portfolio_item_inner">
+                                <div class="portfolio_img">
+                                    <img src="images/portfolio/Screenshot 2025-08-12 141942.png" alt=""
+                                    class="portfolio__img_inner4">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- portfolio item end -->
+                        <!-- portfolio item start -->
+                        <div class="portfolio_item padd-15">
+                            <div class="portfolio_item_inner">
+                                <div class="portfolio_img">
+                                    <img src="images/portfolio/5.png" alt=""
+                                    class="portfolio__img_inner5">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- portfolio item end -->
+                        <!-- portfolio item start -->
+                        <div class="portfolio_item padd-15">
+                            <div class="portfolio_item_inner">
+                                <div class="portfolio_img">
+                                    <img src="images/portfolio/6.png" alt=""
+                                    class="portfolio__img_inner6">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- portfolio item end -->
+                    </div>
+                </div>
+                <!-- portfolio modal -->
+                <div class="img__popup_1">
+                    <div class="portfolio__popup">
+                        <div class="portfolio__popup_inner">
+                            <div class="portfolio__popup_content">
+                                <span class="portfolio__popup_close"> <i
+                                        class="fa-solid fa-xmark portfolio__popup_close1"></i></span>
+                                <div class="pp__thumbnail">
+                                    <img src="images/portfolio/ai-recipe.png" alt="" class="portfolio__popup_img imghover">
+                                </div>
+                                <div class="portfolio__popup_info">
+                                    <div class="portfolio__popup_subtitle">Featured - <span>Design</span></div>
+                                  <p class="details__description">
+  Developed an AI-powered recipe application as part of the BIX Institute team project, enabling users to generate personalized recipes based on available ingredients using cutting-edge machine learning algorithms.
+</p>
+<ul class="detail__info">
+  <li>Created - <span>July 2024 – August 2025</span></li>
+  <li>Technology - <span>MongoDB, Express, React, Node.js (MERN), TensorFlow.js</span></li>
+  <li>Role - <span>Fullstack Developer (Collaborated with Sanjay)</span></li>
+  <li>View - <span><a href="https://your-ai-recipe-app-link.netlify.app/" target="_blank">www.bixinstitute-ai-recipe.com</a></span></li>
+</ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- portfolio modal end -->
+
+                <!-- portfolio modal -->
+                <div class="img__popup_2">
+                    <div class="portfolio__popup">
+                        <div class="portfolio__popup_inner">
+                            <div class="portfolio__popup_content">
+                                <span class="portfolio__popup_close"> <i
+                                        class="fa-solid fa-xmark portfolio__popup_close2"></i></span>
+                                <div class="pp__thumbnail">
+                                    <img src="images/portfolio/search-in.png" alt="" class="portfolio__popup_img imghover">
+                                </div>
+                                <div class="portfolio__popup_info">
+                                    <div class="portfolio__popup_subtitle">Featured - <span>Design</span></div>
+                                    <div class="portfolio__popup_body">
+                                        <h3 class="details__title">SEARCH-IN Job Seeking Application</h3>
+<p class="details__description">
+  Search-In is an intuitive web application developed during my internship to help users quickly find and filter relevant information across multiple data sources with ease.
+</p>
+<ul class="detail__info">
+  <li>Created - <span>15th July 2024</span></li>
+  <li>Technology - <span>React, Node.js, MongoDB</span></li>
+  <li>Role - <span>Fullstack Developer</span></li>
+  <li>View - <span><a href="https://your-search-in-app-link.netlify.app/" target="_blank">www.searchinapp.com</a></span></li>
+</ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- portfolio modal end -->
+                <!-- portfolio modal -->
+                <div class="img__popup_3">
+                    <div class="portfolio__popup">
+                        <div class="portfolio__popup_inner">
+                            <div class="portfolio__popup_content">
+                                <span class="portfolio__popup_close"> <i
+                                        class="fa-solid fa-xmark portfolio__popup_close3"></i></span>
+                                <div class="pp__thumbnail">
+                                    <img src="images/portfolio/royal-sandwich.png" alt="" class="portfolio__popup_img imghover">
+                                </div>
+                                <div class="portfolio__popup_info">
+                                    <div class="portfolio__popup_subtitle">Featured - <span>Design</span></div>
+                                  <p class="details__description">
+  Royal Sandwich is a user-friendly online ordering system developed during my first internship, enabling customers to easily customize and order delicious sandwiches with seamless payment integration.
+</p>
+<ul class="detail__info">
+  <li>Created - <span>June 2024 – July 2024</span></li>
+  <li>Technology - <span>HTML, CSS, JavaScript, PHP, MySQL</span></li>
+  <li>Role - <span>Frontend & Backend Developer</span></li>
+  <li>View - <span><a href="sathik-10.github.io/Royal-Sandwich/" target="_blank">Link</a></span></li>
+</ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- portfolio modal end -->
+                <!-- portfolio modal -->
+                <div class="img__popup_4">
+                    <div class="portfolio__popup">
+                        <div class="portfolio__popup_inner">
+                            <div class="portfolio__popup_content">
+                                <span class="portfolio__popup_close"> <i
+                                        class="fa-solid fa-xmark portfolio__popup_close4"></i></span>
+                                <div class="pp__thumbnail">
+                                    <img src="images/portfolio/Screenshot 2025-08-12 141942.png" alt="" class="portfolio__popup_img imghover">
+                                </div>
+                                <div class="portfolio__popup_info">
+                                    <div class="portfolio__popup_subtitle">Featured - <span>Design</span></div>
+                                    <div class="portfolio__popup_body">
+                            <h3 class="details__title">Birthday Countdown App</h3>
+<p class="details__description">
+  An interactive app to track time left until a special birthday.
+</p>
+
+                                        <ul class="detail__info">
+                                            <li>Created - <span>10 jan 2023</span></li>
+                                            <li>Technology - <span>HTML,CSS & JS</span></li>
+                                            <li>Role - <span>Frontend</span></li>
+                                            <li>View - <span><a href="https://sathik-10.github.io/BirthDay-CountDown/" target="_blank">Link</a></span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- portfolio modal end -->
+                <!-- portfolio modal -->
+                <div class="img__popup_5">
+                    <div class="portfolio__popup">
+                        <div class="portfolio__popup_inner">
+                            <div class="portfolio__popup_content">
+                                <span class="portfolio__popup_close"> <i
+                                        class="fa-solid fa-xmark portfolio__popup_close5"></i></span>
+                                <div class="pp__thumbnail">
+                                    <img src="images/portfolio/5.png" alt="" class="portfolio__popup_img imghover">
+                                </div>
+                                <div class="portfolio__popup_info">
+                                    <div class="portfolio__popup_subtitle">Featured - <span>Design</span></div>
+                                    <div class="portfolio__popup_body">
+                                       <h3 class="details__title">Rolex Watches Website</h3>
+<p class="details__description">
+  A modern e-commerce platform for browsing and purchasing luxury Rolex watches online.
+</p>
+
+                                        <ul class="detail__info">
+                                            <li>Created - <span>24th nov 2022</span></li>
+                                            <li>Technology - <span>HTML,CSS & JS</span></li>
+                                            <li>Role - <span>Frontend</span></li>
+                                            <li>View - <span><a href="https://ecommercewatc.netlify.app/" target="_blank">Link</a></span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- portfolio modal end -->
+                <!-- portfolio modal -->
+                <div class="img__popup_6">
+                    <div class="portfolio__popup">
+                        <div class="portfolio__popup_inner">
+                            <div class="portfolio__popup_content">
+                                <span class="portfolio__popup_close"> <i
+                                        class="fa-solid fa-xmark portfolio__popup_close6"></i></span>
+                                <div class="pp__thumbnail">
+                                    <img src="images/portfolio/6.png" alt="" class="portfolio__popup_img imghover">
+                                </div>
+                                <div class="portfolio__popup_info">
+                                    <div class="portfolio__popup_subtitle">Featured - <span>Design</span></div>
+                                    <div class="portfolio__popup_body">
+                                        <h3 class="details__title">Netcracker Movie Streaming Website</h3>
+<p class="details__description">
+  A web application to explore and watch movies online with ease.
+</p>
+
+                                            <ul class="detail__info">
+                                                <li>Created - <span>2nd oct 2022</span></li>
+                                                <li>Technology - <span>HTML,CSS & JS</span></li>
+                                                <li>Role - <span>Frontend</span></li>
+                                                <li>View - <span><a href="https://moviecrackers.netlify.app/" target="_blank">Link</a></span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- portfolio modal end -->
+                </section>
+        </div>
+                <!-- portfolio section end -->
+                <!-- contact us section start -->
+                <section class="contact section padd" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Contact Me</h2>
+                        </div>
+                    </div>
+                    
+                    <h3 class="contact_title padd-15">Do You Have Any Questions ?</h3>
+                    <h4 class="contact_sub_title padd-15">IM AT YOUR SERVICE</h4>
+                <iframe 
+  class="reveal" 
+  width="100%" 
+  height="200" 
+  frameborder="0" 
+  style="border:1px solid black;" 
+  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3886.5439840994604!2d80.176491!3d13.064673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDAzJzUyLjgiTiA4MMKwMTAnMzUuNCJF!5e0!3m2!1sen!2sin!4v1756582811407!5m2!1sen!2sin" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+<br/>
+                    <br/>
+                    <div class="row reveal">
+                        <!-- contact info ittem start -->
+                        <div class="contact_info_item padd-15">
+                            <div class="icon"><i class="fa fa-phone"></i></div>
+                            <h4>Call Us On</h4>
+                            <p>+91 8778804457</p>
+                        </div>
+                        <!-- contact info ittem end -->
+                        <!-- contact info ittem start -->
+                        <div class="contact_info_item padd-15">
+                            <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                            <h4>College</h4>
+                            <p>Chennai</p>
+                        </div>
+                        <!-- contact info ittem end -->
+                    <!-- contact info ittem start -->
+                    <div class="contact_info_item padd-15">
+                        <div class="icon"><i class="fa fa-envelope"></i></div>
+                        <h4>Email</h4>
+                        <p>mdsathik108@gmail.com</p>
+                    </div>
+                    <!-- contact info ittem end -->
+                    <!-- contact info ittem start -->
+                    <div class="contact_info_item padd-15">
+                        <div class="icon"><i class="fa fa-globe-europe"></i></div>
+                        <h4>Website</h4>
+                        <p>www.domain.com</p>
+                    </div>
+                    <!-- contact info ittem end -->
+                </div>
+                <h3 class="contact_title padd-15">SEND ME AN EMAIL</h3>
+                <h4 class="contact_sub_title padd-15">IM VERY RESPONSIVE TO EMAILS</h4>
+                <!-- Contact form -->
+                <div class="row">
+                 <form id="contact-form" class="contact_form padd15">
+  <div class="row">
+    <div class="form_item col-6 padd-15">
+      <div class="form_group">
+        <input
+          type="text"
+          name="from_name"
+          class="form_control"
+          placeholder="Name (optional) [Any information provided will be private]"
+        />
+      </div>
+    </div>
+    <div class="form_item col-6 padd-15">
+      <div class="form_group">
+      <input
+  type="email"
+  name="email_id"
+  class="form_control"
+  placeholder="Email [your email is protected from spam]"
+  required
+/>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form_item col-12 padd-15">
+      <div class="form_group">
+        <input
+          type="text"
+          name="form_subject"
+          class="form_control"
+          placeholder="Subject"
+          required
+        />
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form_item col-12 padd-15">
+      <div class="form_group">
+        <textarea
+          name="message"
+          class="form_control"
+          placeholder="Message"
+          required
+        ></textarea>
+      </div>
+    </div>
+  </div>
+
+  <div class="subcont">
+    <div class="row">
+      <div class="form_item col-12 padd-15">
+        <button type="submit" class="btn" id="sendmessage">Send Message</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="form_item col-12 padd-15">
+        <button type="reset" class="btn" onclick="resetit()">Reset Form</button>
+      </div>
+    </div>
+  </div>
+</form>
+                    <div id="push" class="pushs"></div>
+                    <div id="pusherror" class="pusherrors"></div>
+                </div>
+            </div>
+        </section>
+        <!-- contact us section end -->
+    </div>
+</div>
+<!-- main content end -->
+
+<!-- main container end -->
+
+<!-- style switcher start -->
+<div class="style_switcher">
+    <div class="style_switcher_toggler s_icon">
+        <i class="fas fa-cog fa-spin"></i>
+    </div>
+    <div class="day_night s_icon">
+        <i class="fas "></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+    <!-- style switcher end -->
+    <!-- jsfiles -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+    <script src="styleswitcher.js"></script>
+</body>
+
+</html>
