@@ -1477,3 +1477,41 @@ iframe{
 .skill-column .skill-item img {
   max-width: 70px;
 }
+/* Add this in your CSS file */
+@media (max-width: 768px) {
+  .skill-grid {
+    justify-content: center; /* center the items */
+  }
+  .skill-item {
+    flex: 0 0 100% !important;  /* full width */
+    max-width: 100%; 
+  }
+}
+/* Base style - keep your flex layout */
+.skill-row {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 960px;
+  margin: 40px auto 0 auto;
+}
+
+/* Mobile fix */
+@media (max-width: 768px) {
+  .skill-column {
+    flex: 0 0 100% !important;   /* full width on mobile */
+    max-width: 100% !important;
+  }
+
+  .skill-grid {
+    flex-wrap: wrap !important;  /* allow wrapping */
+    justify-content: center !important;
+  }
+
+  .skill-item {
+    flex: 0 0 100% !important;   /* each skill takes full row */
+    max-width: 100% !important;
+    margin-bottom: 20px;
+  }
+}
+
